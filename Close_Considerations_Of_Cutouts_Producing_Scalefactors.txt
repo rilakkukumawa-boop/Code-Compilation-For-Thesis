@@ -1,0 +1,20 @@
+"""file1 = fits.open(r'C:/Users/wafiy/T.W/Aligned Photos/Failed Cutouts/cutout_190px_Ha.fits')
+file2 = fits.open(r'C:/Users/wafiy/T.W/Aligned Photos/Failed Cutouts/cutout_190px_r.fits')
+
+file1 = fits.open(r'C:/Users/wafiy/T.W/Aligned Photos/cutout_60px_Ha.fits')
+file2 = fits.open(r'C:/Users/wafiy/T.W/Aligned Photos/cutout_60px_R.fits')
+
+file1 = fits.open(r'C:/Users/wafiy/T.W/Aligned Photos/Considered Regions/cutout_12px_Ha.fits')
+file2 = fits.open(r'C:/Users/wafiy/T.W/Aligned Photos/Considered Regions/cutout_12px_R.fits')#0.182
+
+file1 = fits.open(r'C:/Users/wafiy/T.W/Aligned Photos/Considered Regions/cutout_51px_Ha.fits')
+file2 = fits.open(r'C:/Users/wafiy/T.W/Aligned Photos/Considered Regions/cutout_51px_R.fits') #0.15 
+
+file1 = fits.open(r'C:/Users/wafiy/T.W/Aligned Photos/Considered Regions/cutout_14px_Ha.fits')
+file2 = fits.open(r'C:/Users/wafiy/T.W/Aligned Photos/Considered Regions/cutout_14px_R.fits') #0.1 - 0.13
+
+file1 = fits.open(r'C:/Users/wafiy/T.W/Aligned Photos/Considered Regions/cutout_20px_Ha.fits')
+file2 = fits.open(r'C:/Users/wafiy/T.W/Aligned Photos/Considered Regions/cutout_20px_R.fits') # 0.185
+                  
+file1 = fits.open(r'C:/Users/wafiy/T.W/Aligned Photos/Considered Regions/cutout_89px_Ha.fits')
+file2 = fits.open(r'C:/Users/wafiy/T.W/Aligned Photos/Considered Regions/cutout_89px_R.fits') #0.19 """ 
