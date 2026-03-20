@@ -86,7 +86,7 @@ from photutils.detection import DAOStarFinder
 daofind =  DAOStarFinder(fwhm = 4.0, threshold = 3.0*std_h)
 #builds a gaussian kernel and looks for stars that are 3 px wide. 
 #finding stars that are about as big as 3 pixels 
-#find stars that are above 5 standard deviations away from the background level brightness
+#find stars that are above 4 standard deviations away from the background level brightness
 
 # the DAOStarFinder has the DAOFind algorithm incorporated.
 # it finds the local density maxima and peak ampiltude greater than the 
@@ -237,39 +237,6 @@ Fr_g = Fr[good] #array
 
 print("Number of good stars used:", len(Fh_g))
 
-#---------------------[PLOTTING FOR SCALE FACTOR]----------------------------
-# now we want to plot a flux of R vs Ha 
-# so flux_Ha is the x-values 
-# and flux_R is the y-values
-
-
-#-----  R vs Ha ---------
-#plt.figure()
-#plt.scatter(Fh_g, Fr_g, s= 10, color = 'black')
-#to find line of best fit for y = mx+c 
-#m,c = np.polyfit(Fh_g, Fr_g,1)
-#y = m*x +c 
-#Fh_g = m*Fr_g + c
-#xline = np.linspace(Fh_g.min(), Fh_g.max(), 200)
-#yline =(m * xline) + c
-#yline = best fit
-#best_fit = m*x + c
-#equation of line, i.e best fit
-#plt.plot(xline, yline, color ='red', linewidth=2)
-
-#plt.xlabel("Hα-band flux  ")
-#plt.ylabel("R-band flux ")
-#plt.title("Calibration: R vs Ha (stars)")
-#plt.show()
-#print("m, c =", m,c)
-
-# ----- Ha vs R ? -----
-#outlier conditions
-# Create a comprehensive mask to 'snatch' all the problematic outliers
-# We can catch both by saying: If x > 800 and y < 110, remove them.
-
-#keep_condition = ~((Fr_g > 800) & (Fh_g < 110))
-
 #Apply to your arrays (assuming Fs_g is your Ha flux here)
 keep_condition = ~((Fr_g < 2500) & (Fh_g > 800)| (Fr_g < 25000) & (Fh_g >1800)|(Fr_g<1000) & (Fh_g>100))
 Fr_g = Fr_g[keep_condition]
@@ -312,22 +279,7 @@ plt.imshow(new_Ha_data, origin="lower", cmap="magma", vmin=vmin, vmax=vmax)
 plt.colorbar()
 plt.show()
 
-#instructions 
-#name apeture and save them 
-#convert apertures to ra and dec 
 
-#region in ha with stars and no diff emissions 
-#find sources of stars in Ha 
-#make sure the r is just right for the star 
-
-# apetures that are found are summed
-# list of apetures that i have in order 
-# list of fluxes for each of the stars in R and Ha 
-# for loop for R and Ha photometry extraction/ apeture photometry extraction 
-# making a flux graph of R vs Ha
-# y = mx + c <- after making flux graph of R vs Ha 
-# y = mR + c <- R is the Rbandimage (can name this cal image )
-# then you can do Ha = Ha -calimage
 
 
 
