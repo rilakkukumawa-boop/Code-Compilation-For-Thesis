@@ -58,7 +58,6 @@ def combine_side_by_side(img1, img2, gap=20, pad_value=np.nan):
     #np.nan gap = not a number, gap
 
     return combined
-img_s_combined = combine_side_by_side(img3,img4,)
 
 img_s_combined = combine_side_by_side(img1, img2, gap=20)
 plt.figure(figsize=(12,5))
