@@ -161,8 +161,8 @@ print(sources_s[:7]) #sorted the table by brightness
 
 print("")
 from astropy.wcs import WCS
-wcs_h = WCS(file1[0].header)
-apertures_sky = apertures_s.to_sky(wcs_h)
+wcs_s = WCS(file1[0].header)
+apertures_sky = apertures_s.to_sky(wcs_s)
 print("Aperture_SII(RA/Dec)")
 print("------------------")
 print(apertures_sky)
