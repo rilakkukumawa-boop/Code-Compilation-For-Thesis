@@ -1,0 +1,6 @@
+# Region file format: DS9 version 4.1
+global color=green dashlist=8 3 width=1 font="helvetica 10 normal roman" select=1 highlite=1 dash=0 fixed=0 edit=1 move=1 delete=1 include=1 source=1
+fk5
+box(23.3786870,30.6426432,107.836",107.836",359.04395) # text={SII REG}
+box(23.3812083,30.7181946,185.633",107.066",359.04395) # text={SII REG}
+box(23.3758146,30.6462982,0.000",0.000",359.04395)
