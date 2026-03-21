@@ -258,12 +258,12 @@ plt.ylabel("Hα-band flux ")
 plt.show()
 
 # ----- load master images -----
-file3 = fits.open(r'C:/Users/wafiy/T.W/Aligned Photos/Failed Cutouts/cutout_900px_Rnew.fits')
+file3 = fits.open(r'C:/Users/wafiy/T.W/Aligned Photos/cutout_900px_Rnew.fits')
 img_R_band = file3[0].data
 
 
 
-file4 = fits.open(r'C:/Users/wafiy/T.W/Aligned Photos/Failed Cutouts/cutout_900px_Hanew.fits')
+file4 = fits.open(r'C:/Users/wafiy/T.W/Aligned Photos/cutout_900px_Hanew.fits')
 img_H_band = file4[0].data
 
 # ----- safer subtraction (background removed) -----
