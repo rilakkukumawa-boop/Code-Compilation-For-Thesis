@@ -298,12 +298,12 @@ plt.ylabel("SII-band flux ")
 plt.show()
 
 # ----- load master images -----
-file3 = fits.open(r'C:/Users/wafiy/T.W/Aligned Photos/Failed Cutouts/cutout_800px_Rnew.fits')
+file3 = fits.open(r'C:/Users/wafiy/T.W/Aligned Photos/cutout_800px_Rnew.fits')
 img_R_band = file3[0].data
 
 
 #misaligned need to fix either psf or alignment
-file4 = fits.open(r'C:/Users/wafiy/T.W/Aligned Photos/Failed Cutouts/cutout_800px_SIInew.fits')
+file4 = fits.open(r'C:/Users/wafiy/T.W/Aligned Photos/cutout_800px_SIInew.fits')
 img_SII_band = file4[0].data
 
 # ----- safer subtraction (background removed) -----
