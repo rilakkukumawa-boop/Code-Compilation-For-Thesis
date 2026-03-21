@@ -70,7 +70,7 @@ plt.show()
 
 img_r_combined = combine_side_by_side(img3,img4, gap=20)
 plt.figure(figsize=(12,5))
-plt.imshow(img_s_combined, origin='lower', cmap='magma',
+plt.imshow(img_r_combined, origin='lower', cmap='magma',
            vmin=np.nanpercentile(img_r_combined, 0.5),
            vmax=np.nanpercentile(img_r_combined, 99.8))
 plt.colorbar()
