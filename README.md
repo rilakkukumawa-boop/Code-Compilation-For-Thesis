@@ -14,6 +14,7 @@ This code is used to calculate the diameter of aperture regions
 - **Ratio-Codes:**
 An overview of the Ratio Map demos, and also ratio maps that were used. 
 
+Please ignore when messages say 'error 404', CONTINUE to load files from left hand side of screen by clicking the suggested code. 
 
 
 
